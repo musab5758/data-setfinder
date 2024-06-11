@@ -16,6 +16,8 @@ public:
 
     void makeSound() {
         std::cout << "The " << species << " named " << name << " makes a loud *OOK OOK*!" << std::endl;
+std::cout << "The " << species << " named " << name << " makes a loud *OOK OOK*!" << std::endl;
+    }
     }
 
     void describe() {
