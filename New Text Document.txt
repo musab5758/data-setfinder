@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+class Monkey {
+private:
+    std::string name;
+    int age;
+    std::string species;
+
+public:
+    Monkey(std::string n, int a, std::string s) {
+        name = n;
+        age = a;
+        species = s;
+    }
+
+    void makeSound() {
+        std::cout << "The " << species << " named " << name << " makes a loud *OOK OOK*!" << std::endl;
+    }
+
+    void describe() {
+        std::cout << "This is a " << age << " year old " << species << " named " << name << "." << std::endl;
+    }
+};
+
+int main() {
+    Monkey monkey1("Cheeky", 7, "Chimpanzee");
+    monkey1.makeSound();
+    monkey1.describe();
+
+    return 0;
+}
